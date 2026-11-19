@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0b0"/>
+      <stop offset=".38" stop-color="#e7bd59"/>
+      <stop offset=".72" stop-color="#a96f18"/>
+      <stop offset="1" stop-color="#ffe6a0"/>
+    </linearGradient>
+    <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".45" stop-color="#b9d7e8"/>
+      <stop offset="1" stop-color="#5c7c9a"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M64 5 108 29 123 64 99 108 64 123 29 108 5 64 20 29Z" fill="#100e0a" stroke="url(#gold)" stroke-width="5"/>
+  <path d="M64 15 98 34 111 64 91 98 64 113 37 98 17 64 30 34Z" fill="#17130c" stroke="#b98731" stroke-width="2"/>
+  <path d="M43 36 88 64 43 92Z" fill="url(#gold)" stroke="#fff0bc" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M43 36 64 64 43 92Z" fill="url(#crystal)" opacity=".95"/>
+  <path d="M64 64 88 64 43 36Z" fill="#fff6d5" opacity=".55"/>
+  <path d="M64 64 43 92 88 64Z" fill="#98621b" opacity=".38"/>
+  <path d="M64 5 64 15 M108 29 98 34 M123 64 111 64 M99 108 91 98 M64 123 64 113 M29 108 37 98 M5 64 17 64 M20 29 30 34" stroke="#fff0b0" stroke-width="1.5" opacity=".8"/>
+</svg>
