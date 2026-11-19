@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Gold Diamond Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <header class="brand">
+      <img src="assets/gold-diamond-logo.svg" alt="" class="brand-mark">
+      <div>
+        <h1>GOLD DIAMOND</h1>
+        <p>PRO EDITION</p>
+      </div>
+    </header>
+
+    <div class="status"><span class="status-dot"></span><span id="statusText">READY</span></div>
+
+    <section>
+      <h2>Appearance</h2>
+      <label class="setting"><span>Gold Diamond Logo</span><input id="logo" type="checkbox"></label>
+      <label class="setting"><span>Gold Theme</span><input id="goldTheme" type="checkbox"></label>
+      <label class="setting"><span>Cinema Mode</span><input id="cinema" type="checkbox"></label>
+    </section>
+
+    <section>
+      <h2>Playback</h2>
+      <label class="field-label" for="speed">Playback speed</label>
+      <select id="speed">
+        <option value="0.5">0.5×</option>
+        <option value="0.75">0.75×</option>
+        <option value="1">1.0× Normal</option>
+        <option value="1.25">1.25×</option>
+        <option value="1.5">1.5×</option>
+        <option value="1.75">1.75×</option>
+        <option value="2">2.0×</option>
+      </select>
+      <button id="pip" type="button">Picture-in-Picture</button>
+    </section>
+
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+    <footer>YouTube Premium-Gold Diamond Pro Edition<br>Independent browser customization</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
