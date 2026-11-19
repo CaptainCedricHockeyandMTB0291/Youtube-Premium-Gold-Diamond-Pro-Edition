@@ -1,401 +1,203 @@
 # 💎 YouTube Premium-Gold Diamond Pro Edition
-### Luxury Edition — Custom YouTube Browser Enhancement
+### Luxury Pro Edition — Independent YouTube Browser Enhancement
 
-**YouTube Premium-Gold Diamond Pro Edition** is an independent browser extension project designed to give YouTube a luxury-inspired visual experience through custom gold-and-diamond branding, interface enhancements, and additional playback controls.
+YouTube Premium-Gold Diamond Pro Edition is an independent Chromium browser extension that adds custom Gold Diamond branding and practical viewing controls to the YouTube website.
 
-Built around a black-glass, metallic-gold and crystal-diamond design, the project aims to create a distinctive YouTube experience while retaining the familiar functionality of the original platform.
+It is designed for **Microsoft Edge and Google Chrome** using Manifest V3.
 
-The project supports **Microsoft Edge and Google Chrome** through the Chromium Manifest V3 extension system.
-
----
-
-# 💎 Project Overview
-
-YouTube Premium-Gold Diamond Pro Edition is a browser customization project that introduces a custom visual identity and a collection of optional interface enhancements.
-
-The project focuses on three main areas:
-
-- **Visual customization:** Gold-and-black styling, custom diamond branding and a luxury-inspired interface.
-- **Playback enhancements:** Convenient playback speed controls and browser-supported Picture-in-Picture.
-- **User experience:** Cinema Mode, persistent settings and a dedicated extension control panel.
-
-Gold Diamond Pro is designed to remain lightweight, independently configurable and easy to install.
-
-### Project Identity
-
-| Detail | Information |
-|---|---|
-| Project Name | YouTube Premium-Gold Diamond Pro Edition |
-| Edition | Luxury Pro Edition |
-| Current Version | 2.0.0 |
-| Platform | Chromium-based browsers |
-| Microsoft Edge | Supported target |
-| Google Chrome | Supported target |
-| Extension Architecture | Manifest V3 |
-| Main Language | JavaScript |
-| Interface | HTML / CSS |
-| License | MIT |
+> This is an independent customization project. It is not made by, affiliated with, sponsored by, or endorsed by YouTube or Google. It does not unlock paid YouTube Premium benefits.
 
 ---
 
-# ✨ Features & Functionality
+## ✨ Features
 
-## 1. Gold Diamond Pro Branding
+### Gold Diamond branding
+- Replaces the visible YouTube masthead logo with the project's custom gold-and-crystal play emblem.
+- Keeps the surrounding YouTube logo link in place.
+- Includes a matching emblem in the extension popup.
+- Logo replacement can be switched off to restore the original logo when the same page elements remain mounted.
 
-The central feature of the project is its custom Gold Diamond visual identity.
+### Gold Theme
+- Adds subtle gold accents to the YouTube masthead.
+- Uses a restrained black-and-gold visual style.
 
-The extension is designed around a crystal-style play-button emblem with metallic-gold detailing.
+### Cinema Mode
+- Hides selected secondary watch-page content to provide a more focused layout.
+- Can be toggled from the extension popup.
 
-Features include:
+### Playback speed
+- Offers 0.5×, 0.75×, 1×, 1.25×, 1.5×, 1.75× and 2×.
+- Applies the selected speed to the current HTML video element.
 
-- Custom YouTube header logo replacement.
-- Gold Diamond visual identity.
-- Custom extension popup branding.
-- Matching black-and-gold interface.
-- Diamond-inspired visual styling.
+### Picture-in-Picture
+- Requests the browser's native Picture-in-Picture mode for the current video.
+- Availability depends on browser support, video state and browser user-activation rules.
 
-The original YouTube logo link remains clickable.
-
-**Note:** The supplied reference artwork must be placed in the project's assets directory under the expected filename.
-
-## 2. Luxury Gold Theme
-
-The Gold Theme introduces additional styling to selected YouTube interface elements.
-
-Features include:
-
-- Gold-inspired interface accents.
-- Custom masthead styling.
-- Dark interface appearance.
-- Metallic-gold borders.
-- Subtle visual highlights.
-
-The theme is designed to complement YouTube's existing interface rather than completely rebuild it.
-
-## 3. Cinema Mode
-
-Cinema Mode provides an alternative viewing layout.
-
-When enabled, selected secondary interface elements are hidden to create a more focused viewing experience.
-
-Features:
-
-- Reduced visual distractions.
-- Expanded viewing area.
-- Optional activation through the extension.
-- Persistent user preference.
-
-Some YouTube layouts may require adjustments to the cinema-mode selectors.
-
-## 4. Picture-in-Picture
-
-Gold Diamond Pro includes a Picture-in-Picture control using the browser's native video capabilities.
-
-This allows supported videos to appear in a separate floating playback window.
-
-Features:
-
-- Browser-native Picture-in-Picture.
-- Quick activation through the extension popup.
-- Support dependent on browser and video availability.
-
-This feature uses standard browser functionality rather than a custom video-streaming system.
-
-## 5. Playback Speed Controls
-
-The extension provides convenient playback speed selection.
-
-Available settings:
-
-| Playback Speed | Description |
-|---|---|
-| 0.5× | Half speed |
-| 0.75× | Reduced speed |
-| 1.0× | Normal speed |
-| 1.25× | Increased speed |
-| 1.5× | Increased speed |
-| 1.75× | Increased speed |
-| 2.0× | Double speed |
-
-Playback preferences are stored using Chrome Storage Sync.
-
-## 6. Gold Diamond Control Panel
-
-The extension popup acts as the main control centre.
-
-Users can access:
-
-- Gold Diamond Logo toggle.
-- Gold Theme toggle.
-- Cinema Mode toggle.
-- Playback speed selection.
-- Picture-in-Picture activation.
-
-The interface uses a dark background, gold accents and a compact layout.
-
-## 7. Persistent Settings
-
-Gold Diamond Pro uses the browser's storage functionality to preserve supported preferences.
-
-This means settings can remain available between browser sessions, depending on the user's browser synchronization configuration.
+### Saved preferences
+- Stores logo, theme, cinema and playback-speed settings using `chrome.storage.sync`.
 
 ---
 
-# 🖥️ Browser Compatibility
+## 🖥️ Compatibility
 
-Gold Diamond Pro is developed for Chromium-based desktop browsers.
-
-| Browser | Compatibility |
+| Browser | Support |
 |---|---|
-| Microsoft Edge | Supported target |
-| Google Chrome | Supported target |
-| Other Chromium browsers | Not officially verified |
+| Microsoft Edge (Chromium) | Targeted |
+| Google Chrome | Targeted |
 | Safari | Not supported |
 | Firefox | Not supported |
 
-**Important:** Browser compatibility does not guarantee that every feature will work identically across all versions.
-
-YouTube frequently updates its interface, which may affect selectors, layout styling and logo replacement.
+The extension targets desktop Chromium browsers. YouTube changes its page structure periodically, so selectors may need maintenance.
 
 ---
 
-# 📁 Project Structure
-
-The project uses a modular file structure to keep the extension organized.
+## 📁 Project Structure
 
 ```text
 Youtube-Premium-Gold-Diamond-Pro-Edition/
-│
 ├── manifest.json
-│
 ├── content.js
-│
 ├── popup.html
 ├── popup.css
 ├── popup.js
-│
 ├── README.md
-│
 ├── LICENSE
-│
 └── assets/
-    │
-    └── gold-diamond-reference.png
+    └── gold-diamond-logo.svg
 ```
-
-### File Documentation
 
 | File | Purpose |
 |---|---|
-| `manifest.json` | Extension configuration and permissions |
-| `content.js` | YouTube interface enhancements |
-| `popup.html` | Extension control panel structure |
-| `popup.css` | Gold Diamond interface styling |
-| `popup.js` | Popup controls and settings management |
+| `manifest.json` | Manifest V3 configuration, permissions and content-script registration |
+| `content.js` | Logo replacement, page styling, playback speed and Picture-in-Picture message handler |
+| `popup.html` | Extension popup layout |
+| `popup.css` | Gold-and-black popup styling |
+| `popup.js` | Popup controls, storage and messaging |
+| `assets/gold-diamond-logo.svg` | Custom vector emblem |
 | `README.md` | Project documentation |
-| `LICENSE` | MIT License |
-| `assets/` | Artwork and visual resources |
-| `gold-diamond-reference.png` | Gold Diamond reference artwork |
-
-Each file has a separate responsibility, making future modifications easier.
+| `LICENSE` | MIT license |
 
 ---
 
-# ⚙️ Installation Guide
+## ⚙️ Installation
 
-Gold Diamond Pro currently uses the Chromium Manifest V3 extension architecture.
+### Microsoft Edge
+1. Open the repository and select **Code → Download ZIP**, or clone the repository.
+2. Extract the ZIP.
+3. Open `edge://extensions`.
+4. Enable **Developer mode**.
+5. Select **Load unpacked**.
+6. Select the extracted repository folder containing `manifest.json`.
+7. Open YouTube and refresh the page.
 
-Installation is performed manually through the browser's extension management page.
+### Google Chrome
+1. Download and extract the repository, or clone it.
+2. Open `chrome://extensions`.
+3. Enable **Developer mode**.
+4. Select **Load unpacked**.
+5. Select the repository folder containing `manifest.json`.
+6. Open YouTube and refresh the page.
 
-## Microsoft Edge Installation
-
-1. Download or clone the repository.
-2. Extract the project files if downloaded as a ZIP.
-3. Open Microsoft Edge.
-4. Navigate to:
-
-   `edge://extensions`
-
-5. Enable **Developer mode**.
-6. Select **Load unpacked**.
-7. Locate the extracted project folder.
-8. Select the folder containing `manifest.json`.
-9. Confirm that the extension appears in your extensions list.
-10. Open YouTube and refresh the page.
-
-## Google Chrome Installation
-
-1. Download or clone the repository.
-2. Extract the project files.
-3. Open Google Chrome.
-4. Navigate to:
-
-   `chrome://extensions`
-
-5. Enable **Developer mode**.
-6. Select **Load unpacked**.
-7. Choose the project folder containing `manifest.json`.
-8. Confirm that the extension appears.
-9. Open YouTube and refresh the page.
+After changing extension source files, return to the extensions page, select **Reload** for Gold Diamond Pro, and refresh YouTube.
 
 ---
 
-# 🎛️ Using Gold Diamond Pro
+## 🎛️ Using the Extension
 
-Once installed, the extension can be accessed through the browser toolbar.
+1. Open `youtube.com`.
+2. Select the Gold Diamond Pro extension icon in the browser toolbar.
+3. Toggle the Gold Diamond Logo, Gold Theme or Cinema Mode.
+4. Choose a playback speed.
+5. Select **Picture-in-Picture** while a compatible video is available.
 
-### Changing Appearance
-
-1. Open YouTube.
-2. Click the Gold Diamond Pro extension icon.
-3. Locate the Appearance section.
-4. Enable or disable the Gold Diamond Logo.
-5. Toggle Gold Theme.
-6. Enable Cinema Mode when desired.
-
-### Changing Playback Speed
-
-1. Open a YouTube video.
-2. Open the Gold Diamond Pro extension popup.
-3. Locate Playback Speed.
-4. Select the desired speed.
-
-### Activating Picture-in-Picture
-
-1. Open a supported YouTube video.
-2. Open the extension popup.
-3. Select Picture-in-Picture.
-4. Allow the browser to open its floating video window.
+If the popup says to refresh YouTube, refresh the tab so the content script is loaded.
 
 ---
 
-# ⚠️ Warnings & Important Information
+## 🔐 Permissions
 
-**Use at your own discretion.**
+| Permission | Reason |
+|---|---|
+| `storage` | Save user preferences with Chrome Storage Sync |
+| `activeTab` | Identify and message the active YouTube tab after the user opens the popup |
+| YouTube host access | Run the content script on YouTube and load the extension's logo asset |
 
-YouTube Premium-Gold Diamond Pro Edition is an independent browser customization project.
-
-It is not an official YouTube product and is not affiliated with, sponsored by or endorsed by Google or YouTube.
-
-### Premium Subscription Disclaimer
-
-Despite its Premium-inspired visual identity, Gold Diamond Pro does not unlock YouTube Premium subscriptions or paid account benefits.
-
-The project does not bypass subscription requirements, remove subscription restrictions or provide unauthorized access to paid services.
-
-### Website Compatibility
-
-YouTube can change its HTML structure, CSS selectors and internal navigation system.
-
-These changes may cause certain features to stop working until the project is updated.
-
-### Permissions
-
-The extension requests browser permissions for its documented functionality.
-
-Users should review the permissions declared in `manifest.json` before installation.
-
-### Privacy
-
-The supplied source code does not implement an analytics or tracking system.
-
-Settings are stored using the browser's storage API. Users should review the source code before installing modified versions from other sources.
+The extension does not include analytics, advertising, account scraping or a remote tracking service.
 
 ---
 
-# 🔧 Troubleshooting
+## ⚠️ Important Limitations
 
-### The Gold Diamond logo does not appear.
-
-Check the following:
-
-- Confirm that the artwork exists in the `assets` directory.
-- Confirm that its filename is `gold-diamond-reference.png`.
-- Check that the extension loaded without errors.
-- Refresh YouTube.
-- Check the browser extension console for errors.
-
-### Cinema Mode does not work correctly.
-
-YouTube may have changed its page structure.
-
-Review the selectors inside `content.js` and check whether the affected elements still exist.
-
-### Playback speed does not change.
-
-- Confirm that a video is playing or available.
-- Refresh YouTube.
-- Check that the extension is enabled.
-- Verify that the content script is running.
-
-### Picture-in-Picture does not activate.
-
-Some videos, browser configurations or playback states may prevent Picture-in-Picture from starting.
-
-Check browser compatibility and retry using a supported video.
+- This project changes the visual interface; it does not provide, activate or simulate a paid Premium subscription.
+- It does not remove YouTube advertisements or bypass subscription requirements.
+- Picture-in-Picture is controlled by the browser and may be unavailable in some playback states.
+- Cinema Mode uses page selectors that may need updating when YouTube changes its layout.
+- The logo artwork in this repository is an original SVG emblem. It is not the full promotional screenshot.
+- Browser support is a development target; test the extension in the browser versions you use before relying on it.
 
 ---
 
-# 🧪 Testing & Development
+## 🔧 Troubleshooting
 
-Gold Diamond Pro is an actively developed browser extension project.
+**The logo does not change**
+- Confirm the extension is enabled.
+- Refresh the YouTube tab after loading or reloading the extension.
+- Check `chrome://extensions` or `edge://extensions` for extension errors.
+- YouTube may have changed its masthead selectors.
 
-Before publishing a release, the following areas should be checked:
+**The popup says to refresh YouTube**
+- Refresh the active YouTube tab to load the content script.
 
-- [ ] Manifest V3 configuration.
-- [ ] Extension installation in Microsoft Edge.
-- [ ] Extension installation in Google Chrome.
-- [ ] Gold Diamond artwork loading.
-- [ ] YouTube header logo replacement.
-- [ ] Gold Theme activation.
-- [ ] Cinema Mode activation.
-- [ ] Playback speed selection.
-- [ ] Picture-in-Picture activation.
-- [ ] Settings persistence.
-- [ ] YouTube navigation handling.
-- [ ] Browser console errors.
+**Picture-in-Picture does not start**
+- Confirm a video is loaded.
+- Try starting playback and clicking the control again.
+- The browser may reject the request if its user-activation requirement is not satisfied.
 
-**Testing status:** Not yet independently verified across all supported browsers. Do not interpret the feature list as a claim that every feature has passed testing.
+**Settings do not apply**
+- Confirm browser storage is available.
+- Reload the extension and refresh YouTube.
 
 ---
 
-# 🚀 Future Development
+## 🧪 Development Checklist
 
-Potential future improvements include:
+- [ ] Load unpacked in Microsoft Edge.
+- [ ] Load unpacked in Google Chrome.
+- [ ] Confirm popup opens.
+- [ ] Confirm logo replacement and logo toggle.
+- [ ] Confirm Gold Theme toggle.
+- [ ] Confirm Cinema Mode toggle.
+- [ ] Confirm playback speed changes the video.
+- [ ] Test Picture-in-Picture.
+- [ ] Confirm settings persist after reopening the popup.
+- [ ] Check extension errors and browser console output.
 
-- Additional Gold Diamond interface themes.
-- More customizable visual settings.
-- Improved logo positioning and sizing.
+**Testing status:** Source files have been added to the repository, but this project has not yet been independently tested in live Edge and Chrome sessions. Do not treat the checklist as completed testing.
+
+---
+
+## 🚀 Future Development
+
+Potential improvements:
+- More Gold Diamond themes and accent controls.
+- Adjustable logo sizing.
 - Additional playback preferences.
-- Expanded keyboard shortcuts.
-- Improved responsive popup layout.
-- Better compatibility with future YouTube updates.
-- Additional accessibility options.
-
-Future features will be considered based on compatibility, usefulness and maintainability.
+- Keyboard shortcuts.
+- Improved cinema layout options.
+- Automated compatibility checks for YouTube interface changes.
 
 ---
 
-# 📜 License
+## 📜 License
 
-This project is distributed under the MIT License.
-
-You are permitted to use, modify and distribute the source code under the terms of that license.
-
-See the `LICENSE` file for the complete license text.
+Distributed under the MIT License. See [LICENSE](LICENSE) for the full terms.
 
 ---
 
-# 💎 Final Notes
+## 💎 Project Philosophy
 
-YouTube Premium-Gold Diamond Pro Edition is built around a simple concept:
-
-**A familiar YouTube experience with a completely different visual identity.**
-
-The project combines custom branding, browser-supported playback controls and a luxury-inspired interface into one independent browser extension.
+**A familiar YouTube experience with a distinctive Gold Diamond identity.**
 
 Built for customization. Designed around Gold Diamond.
 
 **YouTube Premium-Gold Diamond Pro Edition — Luxury Pro Experience.**
-
-*Watch More. Worry Less.*
