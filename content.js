@@ -2,7 +2,7 @@
   "use strict";
 
   const DEFAULTS = { logo: true, goldTheme: true, cinema: false, speed: 1 };
-  const LOGO_URL = chrome.runtime.getURL("assets/gold-diamond-logo-v222.svg");
+  const LOGO_URL = chrome.runtime.getURL("assets/gold-diamond-logo-v223.svg");
   const STYLE_ID = "gold-diamond-pro-styles";
   const originalLogoNodes = new WeakMap();
   let settings = { ...DEFAULTS };
@@ -43,27 +43,27 @@
       /* Compact lockup: preserve the entire transparent logo without clipping. */
       .gdp-logo-image {
         display:block !important;
-        width:198px !important;
-        height:49px !important;
-        max-width:198px !important;
+        width:208px !important;
+        height:51px !important;
+        max-width:208px !important;
         min-width:0 !important;
         object-fit:contain !important;
         object-position:left center !important;
-        flex:0 1 198px !important;
+        flex:0 1 208px !important;
       }
       ytd-topbar-logo-renderer,
       ytd-masthead #logo { overflow:visible !important; }
       ytd-topbar-logo-renderer #logo,
       ytd-masthead #logo {
-        width:198px !important;
-        max-width:198px !important;
+        width:208px !important;
+        max-width:208px !important;
         min-width:0 !important;
       }
       ytd-topbar-logo-renderer #logo-icon,
       ytd-masthead #logo-icon {
-        width:198px !important;
-        max-width:198px !important;
-        height:49px !important;
+        width:208px !important;
+        max-width:208px !important;
+        height:51px !important;
         display:flex !important;
         align-items:center !important;
         overflow:visible !important;
