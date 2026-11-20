@@ -2,7 +2,7 @@
   "use strict";
 
   const DEFAULTS = { logo: true, goldTheme: true, cinema: false, speed: 1 };
-  const LOGO_URL = chrome.runtime.getURL("assets/gold-diamond-logo.svg");
+  const LOGO_URL = chrome.runtime.getURL("assets/gold-diamond-logo-v222.svg");
   const STYLE_ID = "gold-diamond-pro-styles";
   const originalLogoNodes = new WeakMap();
   let settings = { ...DEFAULTS };
