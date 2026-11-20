@@ -12,10 +12,22 @@
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
+      /* A brighter gold divider, kept in the same masthead position in dark and light themes. */
+      ytd-masthead,
+      #masthead-container {
+        border-bottom: 2px solid #e9b94d !important;
+        box-shadow:
+          0 2px 0 rgba(255, 225, 150, .35),
+          0 3px 18px rgba(231, 174, 55, .30),
+          0 5px 28px rgba(197, 133, 25, .16) !important;
+      }
       html.gdp-gold-theme ytd-masthead,
       html.gdp-gold-theme #masthead-container {
-        border-bottom: 1px solid rgba(218,174,77,.55) !important;
-        box-shadow: 0 2px 16px rgba(218,174,77,.10) !important;
+        border-bottom-color: #ffd36b !important;
+        box-shadow:
+          0 2px 0 rgba(255, 238, 190, .55),
+          0 3px 20px rgba(255, 190, 55, .42),
+          0 6px 32px rgba(214, 145, 28, .22) !important;
       }
       html.gdp-cinema-mode ytd-watch-flexy #secondary,
       html.gdp-cinema-mode ytd-watch-flexy #related {
@@ -25,11 +37,17 @@
         max-width: 100% !important;
       }
       .gdp-logo-image {
-        display:block !important;
-        width:40px !important;
-        height:32px !important;
-        object-fit:contain !important;
-        flex:0 0 auto !important;
+        display: block !important;
+        width: 100px !important;
+        height: 79px !important;
+        max-width: 100px !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        flex: 0 0 auto !important;
+      }
+      ytd-topbar-logo-renderer,
+      ytd-masthead #logo {
+        overflow: visible !important;
       }
     `;
     (document.head || document.documentElement).appendChild(style);
@@ -47,8 +65,8 @@
         const image = document.createElement("img");
         image.className = "gdp-logo-image";
         image.src = LOGO_URL;
-        image.alt = "Gold Diamond Pro";
-        image.title = "YouTube Gold Diamond Pro";
+        image.alt = "YouTube Premium Gold Diamond Edition";
+        image.title = "Gold Diamond Edition — Watch More. Worry Less.";
         target.replaceChildren(image);
         target.dataset.gdpLogoApplied = "true";
       } else if (target.dataset.gdpLogoApplied === "true") {
