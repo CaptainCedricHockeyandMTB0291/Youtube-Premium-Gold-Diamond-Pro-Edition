@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YouTube Premium-Gold Diamond Pro Edition",
   "short_name": "Gold Diamond Pro",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Luxury gold-and-diamond branding and practical viewing controls for YouTube.",
   "permissions": [
     "storage",
@@ -29,7 +29,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/gold-diamond-logo.svg"
+        "assets/gold-diamond-logo.svg",
+        "assets/gold-diamond-logo-v222.svg"
       ],
       "matches": [
         "https://www.youtube.com/*"
