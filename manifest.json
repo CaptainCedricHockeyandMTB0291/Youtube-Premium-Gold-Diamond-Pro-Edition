@@ -2,25 +2,38 @@
   "manifest_version": 3,
   "name": "YouTube Premium-Gold Diamond Pro Edition",
   "short_name": "Gold Diamond Pro",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Luxury gold-and-diamond branding and practical viewing controls for YouTube.",
-  "permissions": ["storage", "activeTab"],
-  "host_permissions": ["https://www.youtube.com/*"],
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
   "action": {
     "default_title": "YouTube Premium-Gold Diamond Pro Edition",
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["assets/gold-diamond-logo.svg"],
-      "matches": ["https://www.youtube.com/*"]
+      "resources": [
+        "assets/gold-diamond-logo.svg"
+      ],
+      "matches": [
+        "https://www.youtube.com/*"
+      ]
     }
   ]
 }
