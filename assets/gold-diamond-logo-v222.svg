@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-labelledby="title desc">
+<title id="title">YouTube Premium — Gold Diamond Edition</title>
+<desc id="desc">A compact gold glass play-button emblem with gold Premium lettering and Gold Diamond Edition beneath the emblem.</desc>
+<defs>
+ <linearGradient id="gold" x1="0" y1="0" x2="0.9" y2="1">
+  <stop offset="0" stop-color="#fff3bd"/><stop offset=".18" stop-color="#ffe08a"/><stop offset=".42" stop-color="#f6bd45"/><stop offset=".68" stop-color="#c98212"/><stop offset=".86" stop-color="#ffdc78"/><stop offset="1" stop-color="#fff0b2"/>
+ </linearGradient>
+ <linearGradient id="glassGold" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#fff4c7" stop-opacity=".86"/><stop offset=".28" stop-color="#f6bf4c" stop-opacity=".36"/><stop offset=".58" stop-color="#d98b16" stop-opacity=".52"/><stop offset=".82" stop-color="#ffe8a1" stop-opacity=".25"/><stop offset="1" stop-color="#a96108" stop-opacity=".7"/>
+ </linearGradient>
+ <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".8"/><stop offset=".35" stop-color="#fff0be" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<!-- Transparent background: only the gold emblem and lettering are drawn. -->
+<rect x="3.5" y="5" width="51" height="39" rx="11" fill="url(#glassGold)" stroke="url(#gold)" stroke-width="2.4" filter="url(#glow)"/>
+<path d="M8 15 Q13 7 23 7 H39 Q49 7 52 17" fill="none" stroke="#fff4cb" stroke-width="1.5" opacity=".85"/>
+<path d="M7 27 17 8 29 7 21 24 7 38Z" fill="#fff0bd" opacity=".19"/>
+<path d="M17 10 28 8 20 24 8 35Z M29 8 48 13 35 25 20 24Z M8 35 20 24 35 25 49 39 15 42Z" fill="url(#glassGold)" stroke="#ffe5a0" stroke-width=".55" opacity=".8"/>
+<path d="M22 13.5 41 24.5 22 35.5Z" fill="url(#gold)" stroke="#fff0bd" stroke-width="1.5" stroke-linejoin="round" filter="url(#glow)"/>
+<path d="M22 13.5 29 24.5 22 35.5Z" fill="#fff8dc" opacity=".32"/>
+<path d="M48 7l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" fill="#fff4c9" filter="url(#glow)"/>
+<text x="29" y="55" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5.1" font-weight="700" letter-spacing=".05" fill="#f4c766">GOLD DIAMOND EDITION</text>
+<text x="65" y="39" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="-1.1" fill="url(#gold)" stroke="#8d570c" stroke-width=".35" paint-order="stroke">Premium</text>
+<path d="M66 45H248" stroke="url(#gold)" stroke-width=".8" opacity=".55"/>
+<path d="M66 45H248" stroke="#fff0b4" stroke-width=".35" opacity=".55"/>
+</svg>
