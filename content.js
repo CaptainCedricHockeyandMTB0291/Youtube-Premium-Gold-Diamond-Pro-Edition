@@ -12,49 +12,58 @@
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
-      /* Keep the brighter gold divider in its existing masthead position. */
-      ytd-masthead,
+      /* Draw the accent on ONE masthead layer only, preventing a doubled divider. */
+      ytd-masthead {
+        border-bottom: 0 !important;
+        box-shadow: none !important;
+      }
       #masthead-container {
         border-bottom: 2px solid #e9b94d !important;
-        box-shadow: 0 2px 0 rgba(255,225,150,.35),
-                    0 3px 18px rgba(231,174,55,.30),
-                    0 5px 28px rgba(197,133,25,.16) !important;
+        box-shadow: 0 2px 0 rgba(255,225,150,.32),
+                    0 4px 17px rgba(231,174,55,.28),
+                    0 6px 26px rgba(197,133,25,.13) !important;
       }
-      html.gdp-gold-theme ytd-masthead,
       html.gdp-gold-theme #masthead-container {
         border-bottom-color: #ffd36b !important;
-        box-shadow: 0 2px 0 rgba(255,238,190,.55),
-                    0 3px 20px rgba(255,190,55,.42),
-                    0 6px 32px rgba(214,145,28,.22) !important;
+        box-shadow: 0 2px 0 rgba(255,238,190,.5),
+                    0 4px 19px rgba(255,190,55,.4),
+                    0 6px 30px rgba(214,145,28,.2) !important;
       }
+
+      /* Hide YouTube's small country marker so it cannot collide with the custom wordmark. */
+      ytd-topbar-logo-renderer #country-code,
+      ytd-masthead #country-code {
+        display: none !important;
+      }
+
       html.gdp-cinema-mode ytd-watch-flexy #secondary,
       html.gdp-cinema-mode ytd-watch-flexy #related { display:none !important; }
       html.gdp-cinema-mode ytd-watch-flexy #primary { max-width:100% !important; }
 
-      /* Compact horizontal brand lockup sized for YouTube's top navigation bar. */
+      /* Compact lockup: preserve the entire transparent logo without clipping. */
       .gdp-logo-image {
         display:block !important;
-        width:220px !important;
-        height:54px !important;
-        max-width:220px !important;
+        width:198px !important;
+        height:49px !important;
+        max-width:198px !important;
         min-width:0 !important;
         object-fit:contain !important;
         object-position:left center !important;
-        flex:0 1 220px !important;
+        flex:0 1 198px !important;
       }
       ytd-topbar-logo-renderer,
       ytd-masthead #logo { overflow:visible !important; }
       ytd-topbar-logo-renderer #logo,
       ytd-masthead #logo {
-        width:220px !important;
-        max-width:220px !important;
+        width:198px !important;
+        max-width:198px !important;
         min-width:0 !important;
       }
       ytd-topbar-logo-renderer #logo-icon,
       ytd-masthead #logo-icon {
-        width:220px !important;
-        max-width:220px !important;
-        height:54px !important;
+        width:198px !important;
+        max-width:198px !important;
+        height:49px !important;
         display:flex !important;
         align-items:center !important;
         overflow:visible !important;
