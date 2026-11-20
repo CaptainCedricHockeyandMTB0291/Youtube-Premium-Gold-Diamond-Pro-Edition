@@ -19,7 +19,7 @@
 <path d="M22 13.5 41 24.5 22 35.5Z" fill="url(#gold)" stroke="#fff0bd" stroke-width="1.5" stroke-linejoin="round" filter="url(#glow)"/>
 <path d="M22 13.5 29 24.5 22 35.5Z" fill="#fff8dc" opacity=".32"/>
 <path d="M48 7l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" fill="#fff4c9" filter="url(#glow)"/>
-<text x="29" y="55" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7.1" font-weight="700" letter-spacing=".2" fill="#f4c766">GOLD DIAMOND</text>
+<text x="29" y="55" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="5.1" font-weight="700" letter-spacing=".05" fill="#f4c766">GOLD DIAMOND EDITION</text>
 <text x="65" y="39" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="-1.1" fill="url(#gold)" stroke="#8d570c" stroke-width=".35" paint-order="stroke">Premium</text>
 <path d="M66 45H248" stroke="url(#gold)" stroke-width=".8" opacity=".55"/>
 <path d="M66 45H248" stroke="#fff0b4" stroke-width=".35" opacity=".55"/>
