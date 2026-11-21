@@ -1,0 +1,65 @@
+/* Gold Diamond Edition: palette and logo artwork matched to the original project. */
+.gdp-ad-panel-host {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 150px !important;
+  padding: 9px !important;
+}
+.gdp-ad-panel {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 132px;
+  height: 100%;
+  padding: 15px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  overflow: hidden;
+  text-align: center;
+  color: #f5f0e5;
+  background: radial-gradient(ellipse at 90% 0%, rgba(176,128,36,.19), transparent 48%), #090909;
+  border: 1px solid #62491e;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(231,189,97,.08), 0 2px 12px rgba(0,0,0,.16);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.gdp-ad-logo {
+  display: block;
+  width: min(270px, 90%);
+  height: auto;
+  max-height: 65px;
+  object-fit: contain;
+  object-position: center;
+  flex: 0 1 auto;
+}
+.gdp-ad-line {
+  width: min(78%, 280px);
+  height: 1px;
+  margin: 3px 0 2px;
+  background: linear-gradient(90deg, transparent, #8f6a2b 16%, #e7bd61 50%, #8f6a2b 84%, transparent);
+}
+.gdp-ad-label {
+  color: #e7bd61;
+  font-size: clamp(10px, 1.25vw, 13px);
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: 1.3;
+}
+.gdp-ad-subline {
+  color: #a99b7b;
+  font-size: clamp(8px, .95vw, 10px);
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  line-height: 1.3;
+}
+@media (max-width: 520px) {
+  .gdp-ad-panel-host { min-height: 118px !important; padding: 6px !important; }
+  .gdp-ad-panel { min-height: 106px; padding: 10px 7px; border-radius: 8px; }
+  .gdp-ad-logo { width: min(230px, 92%); max-height: 53px; }
+  .gdp-ad-label { letter-spacing: 1.2px; }
+  .gdp-ad-subline { letter-spacing: 1px; }
+}
