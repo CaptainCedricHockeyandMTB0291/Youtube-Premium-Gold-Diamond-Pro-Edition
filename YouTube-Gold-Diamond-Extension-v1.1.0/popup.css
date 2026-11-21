@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { width: 320px; margin: 0; color: #f5f0e5; background: #090909; font: 13px/1.45 "Segoe UI", Arial, sans-serif; }
+.panel { padding: 18px; background: radial-gradient(ellipse at 90% 0%, rgba(176,128,36,.19), transparent 48%), #090909; }
+.brand { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #62491e; }
+.brand-mark { width: 76px; height: 48px; object-fit: contain; }
+h1 { margin: 0; color: #e7bd61; font-size: 14px; letter-spacing: 1.3px; }
+.brand p { margin: 3px 0 0; color: #a99b7b; font-size: 10px; letter-spacing: 2px; }
+.status { margin: 13px 0 16px; color: #d8b45e; font-size: 10px; letter-spacing: 1.4px; }
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #dcb451; box-shadow: 0 0 8px #dcb451; }
+section { margin-top: 16px; }
+h2 { margin: 0 0 10px; color: #dfb958; font-size: 13px; }
+.setting { display: flex; align-items: center; justify-content: space-between; min-height: 40px; border-bottom: 1px solid #282319; }
+input[type="checkbox"] { width: 17px; height: 17px; accent-color: #d5a83e; }
+.message { min-height: 17px; margin: 10px 0 0; color: #e5c777; font-size: 11px; }
+footer { margin-top: 14px; padding-top: 12px; border-top: 1px solid #62491e; color: #8e846f; text-align: center; font-size: 9px; }
