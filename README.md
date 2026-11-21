@@ -4,6 +4,7 @@
 YouTube Premium-Gold Diamond Pro Edition is an independent Chromium browser extension that adds custom Gold Diamond branding and practical viewing controls to the YouTube website.
 
 It is designed for **Microsoft Edge and Google Chrome** using Manifest V3.
+It works great with other Youtube extensions and is built to work with other extensions.
 
 > This is an independent customization project. It is not made by, affiliated with, sponsored by, or endorsed by YouTube or Google. It does not unlock paid YouTube Premium benefits.
 
