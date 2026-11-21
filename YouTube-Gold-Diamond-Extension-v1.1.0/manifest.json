@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Premium-Gold Diamond Pro Edition — Empty Ad Panels",
+  "short_name": "Gold Diamond Panels",
+  "version": "1.1.0",
+  "description": "Adds Gold Diamond Edition branded panels to detected empty YouTube ad spaces.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_title": "Gold Diamond Pro Edition",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/gold-diamond-logo-v223.svg"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
